@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lookfavor — Livres et projets éditoriaux</title>
+<meta name="description" content="Livres et projets éditoriaux de Gaétan Vermeire — pompier professionnel, photographe et auteur.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="#top">LOOKFAVOR</a>
+  <nav><a href="#book" data-i18n="navBook">Livre</a><a href="#future" data-i18n="navFuture">À venir</a><a href="#projects" data-i18n="navProjects">Projets</a><a href="#author" data-i18n="navAuthor">Auteur</a></nav>
+  <div class="lang-switch"><button class="lang active" data-lang="fr">FR</button><button class="lang" data-lang="nl">NL</button><button class="lang" data-lang="en">EN</button></div>
+</header>
+<main id="top">
+<section class="hero" id="hero">
+  <div class="sticky">
+    <div class="hero-copy" id="heroCopy"><p class="eyebrow" data-i18n="heroKicker">Livre disponible</p><h1 data-i18n="heroTitle">L’Art de l’Instant</h1><p data-i18n="heroText">Chronique d’un pompier-photographe belge. Un récit visuel et humain né entre intervention, lumière et silence.</p></div>
+    <div class="book-zone">
+      <div class="book-wrap" id="bookWrap">
+        <div class="book" id="book3d">
+          <div class="cover front"><img id="frontCover" src="assets/book-fr-front.jpg" alt="Couverture avant"></div>
+          <div class="cover back"><img id="backCover" src="assets/book-fr-back.jpg" alt="Couverture arrière"></div>
+          <div class="spine"><img id="spineCover" src="assets/book-fr-spine.jpg" alt="Tranche"></div>
+          <div class="pages pages-a"></div><div class="pages pages-b"></div><div class="pages pages-c"></div>
+        </div>
+        <div class="floor-shadow"></div>
+      </div>
+    </div>
+    <div class="book-notes">
+      <article class="note n1"><strong data-i18n="note1Title">Ce n’est pas un manuel.</strong><span data-i18n="note1Text">C’est une trace, celle d’un homme entre service, photographie et vocation.</span></article>
+      <article class="note n2"><strong data-i18n="note2Title">102 pages illustrées.</strong><span data-i18n="note2Text">Des images de terrain, des événements, des regards et des instants.</span></article>
+      <article class="note n3"><strong data-i18n="note3Title">Un livre pour ceux qui aiment le réel.</strong><span data-i18n="note3Text">Passion, doute, apprentissage, inspiration et persévérance.</span></article>
+    </div>
+    <div class="progress"><span id="progressBar"></span></div>
+  </div>
+</section>
+
+<section class="section purchase" id="book">
+ <div class="copy"><p class="eyebrow" data-i18n="availableKicker">Disponible à l’achat</p><h2 data-i18n="availableTitle">L’Art de l’Instant</h2><p data-i18n="availableText">Choisis la langue du livre, puis ton pays Amazon. Le site ouvre le bon lien d’achat.</p></div>
+ <div class="buy-panel"><label data-i18n="bookLangLabel">Langue du livre</label><select id="bookLanguage"><option value="fr">Français</option><option value="nl">Nederlands</option><option value="en">English</option></select><label data-i18n="marketLabel">Pays Amazon</label><select id="market"><option value="be">Belgique</option><option value="fr">France</option><option value="nl">Pays-Bas</option><option value="de">Allemagne</option><option value="uk">Royaume-Uni</option><option value="us">États-Unis</option><option value="es">Espagne</option><option value="it">Italie</option><option value="ie">Irlande</option><option value="pl">Pologne</option><option value="se">Suède</option></select><a id="buyButton" class="btn primary" target="_blank" rel="noopener" data-i18n="buyButton">Voir sur Amazon</a></div>
+</section>
+
+<section class="section future" id="future"><div class="future-card"><img src="assets/future-flammes.svg" alt="Entre Flammes & Silences"></div><div class="copy"><p class="eyebrow" data-i18n="futureKicker">Prochain livre à venir</p><h2 data-i18n="futureTitle">Entre Flammes & Silences</h2><p data-i18n="futureText">Un projet plus immersif, centré sur ce que le métier laisse derrière lui : les gestes, les silences, les souvenirs et ce qu’on ne montre presque jamais.</p><button id="shareFuture" class="btn ghost" data-i18n="shareProject">Partager le projet</button></div></section>
+
+<section class="section projects" id="projects"><div class="copy wide"><p class="eyebrow" data-i18n="projectsKicker">À venir</p><h2 data-i18n="projectsTitle">Projets éditoriaux</h2><p data-i18n="projectsText">Des supports pensés pour transmettre, raconter et accompagner celles et ceux qui s’intéressent au monde pompier.</p></div><div class="project-grid"><article><img src="assets/project-carnet.svg" alt="Carnet de garde"><h3 data-i18n="card1Title">Carnet de garde</h3><p data-i18n="card1Text">Un carnet pour garder une trace des gardes, interventions, apprentissages et réflexions.</p></article><article><img src="assets/project-futur.svg" alt="Journal d’un futur pompier"><h3 data-i18n="card2Title">Journal d’un futur pompier</h3><p data-i18n="card2Text">Un support pour accompagner les candidats dans leur préparation, discipline et motivation.</p></article></div></section>
+
+<section class="section author" id="author"><div class="author-card"><img src="assets/author-gaetan-backcover.jpg" alt="Gaétan Vermeire"><span>Photo issue de la quatrième de couverture</span></div><div class="copy"><p class="eyebrow" data-i18n="authorKicker">Qui est l’auteur ?</p><h2 data-i18n="authorTitle">Gaétan Vermeire</h2><p data-i18n="authorText">Pompier professionnel à Bruxelles, photographe de reportage et auteur. Lookfavor rassemble une même intention : raconter le réel avec sobriété, précision et humanité.</p><a class="btn ghost" href="https://www.instagram.com/the_lookfavor" target="_blank" rel="noopener">Instagram</a></div></section>
+</main><footer>© <span id="year"></span> Gaétan Vermeire — Lookfavor</footer><script src="script.js?v=10"></script>
+</body></html>
