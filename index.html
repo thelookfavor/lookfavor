@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lookfavor — Expérience cinématographique</title>
+  <meta name="description" content="Site vitrine cinématographique Lookfavor : livres, photographie de reportage et univers pompier." />
+  <meta property="og:title" content="Lookfavor — L’art du réel" />
+  <meta property="og:description" content="Une expérience immersive autour des livres, de la photographie et du monde pompier." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" aria-label="Navigation principale">
+    <a class="brand" href="#hero" aria-label="Retour au début">LOOKFAVOR</a>
+    <nav>
+      <a href="#livre">Livre</a>
+      <a href="#projets">Projets</a>
+      <a href="#auteur">Auteur</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="chapter hero" data-scene="0">
+      <div class="grain"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Photo • Livre • Univers pompier</p>
+        <h1>L’art du réel, raconté comme une scène de cinéma.</h1>
+        <p class="lead">Un site vitrine immersif pour présenter les livres, les projets éditoriaux et l’univers Lookfavor avec une progression visuelle au scroll.</p>
+        <a class="button" href="#livre">Entrer dans l’histoire</a>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">Scroll</div>
+    </section>
+
+    <section id="cinematic-product" class="cinematic-stage" aria-label="Animation principale au défilement">
+      <div class="sticky-scene">
+        <div class="scene-copy scene-copy-left" data-copy="1">
+          <p class="eyebrow">Chapitre I</p>
+          <h2>Le regard</h2>
+          <p>Une photographie sobre, chaude, humaine. Pas d’effet gratuit. Juste la tension calme du réel.</p>
+        </div>
+
+        <div class="visual-device" aria-hidden="true">
+          <div class="book-object">
+            <div class="book-cover">
+              <span class="book-label">LOOKFAVOR</span>
+              <h3>L’Art de l’Instant</h3>
+              <p>Chronique d’un pompier-photographe</p>
+            </div>
+            <div class="book-spine"></div>
+          </div>
+        </div>
+
+        <div class="scene-copy scene-copy-right" data-copy="2">
+          <p class="eyebrow">Chapitre II</p>
+          <h2>La matière</h2>
+          <p>Des livres, des récits, des images et des projets construits autour de la vie pompier belge.</p>
+        </div>
+
+        <div class="scene-copy scene-copy-bottom" data-copy="3">
+          <p class="eyebrow">Chapitre III</p>
+          <h2>La transmission</h2>
+          <p>Transformer l’expérience de terrain en contenu utile, beau et durable. Moins de bruit, plus d’impact.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="livre" class="chapter split-section">
+      <div class="copy-block reveal">
+        <p class="eyebrow">Livre disponible</p>
+        <h2>L’Art de l’Instant</h2>
+        <p>Un récit photographique et humain au cœur du métier de pompier, entre tension, silence et mémoire.</p>
+        <div class="actions">
+          <a class="button" href="#" aria-label="Lien Amazon à remplacer">Voir le livre</a>
+          <a class="button secondary" href="#projets">Découvrir la suite</a>
+        </div>
+      </div>
+      <div class="card-stack reveal" aria-hidden="true">
+        <div class="photo-card card-one"></div>
+        <div class="photo-card card-two"></div>
+        <div class="photo-card card-three"></div>
+      </div>
+    </section>
+
+    <section id="projets" class="chapter projects-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projets éditoriaux</p>
+        <h2>Un univers qui avance par chapitres.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <span>01</span>
+          <h3>Entre Flammes & Silences</h3>
+          <p>Le prochain grand récit narratif : plus intime, plus brut, plus universel.</p>
+        </article>
+        <article class="project-card reveal">
+          <span>02</span>
+          <h3>Carnet de garde</h3>
+          <p>Un objet pratique et personnel pour structurer les souvenirs, les leçons et les transmissions.</p>
+        </article>
+        <article class="project-card reveal">
+          <span>03</span>
+          <h3>Journal d’un futur pompier</h3>
+          <p>Un guide de progression pour celles et ceux qui veulent entrer dans le métier.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="auteur" class="chapter author-section">
+      <div class="copy-block reveal">
+        <p class="eyebrow">Auteur & photographe</p>
+        <h2>Gaétan Vermeire</h2>
+        <p>Pompier professionnel à Bruxelles, photographe de reportage, auteur et créateur de l’univers Lookfavor.</p>
+        <p class="muted">Ce site est pensé comme une expérience vitrine : il ne remplace pas la boutique, il donne envie d’y aller. C’est exactement son travail. Une vitrine, pas une armoire IKEA.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Lookfavor — Tous droits réservés.</p>
+    <a href="https://www.instagram.com/the_lookfavor" target="_blank" rel="noopener">Instagram</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
