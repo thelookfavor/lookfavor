@@ -1,109 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lookfavor - Livres & univers pompier</title>
-  <meta name="description" content="Lookfavor - livres, récits et projets éditoriaux de Gaétan Vermeire, pompier professionnel à Bruxelles et photographe.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lookfavor Académie</title>
+  <meta name="description" content="Site vitrine de Lookfavor Académie : livres, projets éditoriaux et univers de Gaétan Vermeire." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="#top">LOOKFAVOR</a>
-  <nav>
-    <a href="#disponible">Livre</a>
-    <a href="#prochain">Prochain livre</a>
-    <a href="#projets">Projets</a>
-    <a href="#auteur">Auteur</a>
-  </nav>
-</header>
-
-<main id="top">
-  <section class="chapter hero" data-scene="hero">
-    <div class="ambient fire"></div>
-    <div class="copy cinematic-copy">
-      <p class="kicker">Lookfavor - univers éditorial</p>
-      <h1>Un site pour entrer dans les livres, pas seulement les acheter.</h1>
-      <p class="lead">Une expérience cinématographique autour des récits de terrain, du feu, de la photographie et de la transmission.</p>
+  <header class="site-header">
+    <a class="brand" href="#top">LOOKFAVOR</a>
+    <nav class="desktop-nav">
+      <a href="#book" data-i18n="navBook">Livre</a>
+      <a href="#next" data-i18n="navNext">Prochain livre</a>
+      <a href="#projects" data-i18n="navProjects">Projets</a>
+      <a href="#author" data-i18n="navAuthor">Auteur</a>
+    </nav>
+    <div class="lang-switch" aria-label="Choix de langue">
+      <button class="lang-btn active" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="nl">NL</button>
+      <button class="lang-btn" data-lang="en">EN</button>
     </div>
-    <div class="stage-book big" id="mainBook">
-      <div class="book3d">
-        <div class="book-face front"><img id="frontCover" src="assets/cover-front-fr.jpg" alt="Couverture du livre L'Art de l'Instant"></div>
-        <div class="book-face back"><img id="wrapCover" src="assets/cover-wrap-fr.jpg" alt="Couverture complète du livre"></div>
-        <div class="book-spine"></div>
-      </div>
-    </div>
-    <span class="scroll-note">Défiler</span>
-  </section>
+  </header>
 
-  <section id="disponible" class="chapter available" data-scene="book">
-    <div class="copy split-copy">
-      <p class="kicker">Livre disponible à l'achat</p>
-      <h2 id="bookTitle">L'Art de l'Instant</h2>
-      <p id="bookSubtitle">Chroniques d'un Pompier-Photographe Belge</p>
-      <p>Un premier livre comme une trace : le regard d'un pompier-photographe sur les instants qui construisent une vocation.</p>
-      <div class="language-panel">
-        <p class="panel-title">Choisir la langue du livre</p>
-        <div class="lang-buttons" role="group" aria-label="Choisir la langue">
-          <button class="lang active" data-lang="fr">FR</button>
-          <button class="lang" data-lang="nl">NL</button>
-          <button class="lang" data-lang="en">EN</button>
+  <main id="top">
+    <section class="scroll-cinema" id="cinema">
+      <div class="cinema-sticky">
+        <div class="bg-flame"></div>
+        <div class="cinema-copy intro-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Lookfavor Académie</p>
+          <h1 data-i18n="heroTitle">Des livres pour entrer dans le réel.</h1>
+          <p data-i18n="heroText">Une porte d’entrée vers l’univers éditorial de Gaétan Vermeire : pompier professionnel, photographe et auteur.</p>
         </div>
-        <label for="country">Pays Amazon</label>
-        <select id="country">
-          <option value="be">Belgique</option><option value="fr">France</option><option value="nl">Pays-Bas</option><option value="us">États-Unis</option><option value="uk">Royaume-Uni</option><option value="de">Allemagne</option><option value="es">Espagne</option><option value="it">Italie</option><option value="pl">Pologne</option><option value="se">Suède</option><option value="ie">Irlande</option>
-        </select>
-        <a id="buyLink" class="cta" href="https://kdp.amazon.com/amazon-dp-action/be/dualbookshelf.marketplacelink/B0FHVGN67M" target="_blank" rel="noopener">Acheter cette version</a>
+
+        <div class="book-stage" aria-label="Livre animé">
+          <div class="book-3d" id="book3d">
+            <div class="book-side book-front"><img id="frontCover" src="assets/cover-front-fr.jpg" alt="Couverture L’Art de l’Instant"></div>
+            <div class="book-side book-back"><img id="backCover" src="assets/cover-wrap-fr.jpg" alt="Couverture complète L’Art de l’Instant"></div>
+            <div class="book-spine"></div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+
+        <div class="orbit-note note-1">
+          <strong data-i18n="note1Title">Un regard de terrain</strong>
+          <span data-i18n="note1Text">Des images et récits issus d’un vécu réel, pas d’un décor.</span>
+        </div>
+        <div class="orbit-note note-2">
+          <strong data-i18n="note2Title">Une chronique humaine</strong>
+          <span data-i18n="note2Text">Le métier, les doutes, la passion, l’apprentissage et la persévérance.</span>
+        </div>
+        <div class="orbit-note note-3">
+          <strong data-i18n="note3Title">Pour qui ?</strong>
+          <span data-i18n="note3Text">Pompiers, passionnés d’image, curieux du réel et lecteurs de récits authentiques.</span>
+        </div>
+
+        <div class="scroll-indicator" data-i18n="scroll">Défiler</div>
       </div>
-    </div>
-    <div class="book-showcase">
-      <img id="showcaseCover" src="assets/cover-front-fr.jpg" alt="Couverture sélectionnée">
-      <div class="glow"></div>
-    </div>
-  </section>
+    </section>
 
-  <section id="prochain" class="chapter next-book" data-scene="flames">
-    <div class="embers"></div>
-    <div class="copy centered">
-      <p class="kicker">Prochain livre à venir</p>
-      <h2>Entre Flammes & Silences</h2>
-      <p>Une séquence plus sombre, plus intérieure : le feu visible, les silences qu'on garde, et ce que le métier laisse derrière lui.</p>
-      <button class="ghost" onclick="shareProject('Entre Flammes & Silences')">Partager le projet</button>
-    </div>
-    <div class="flame-frame" aria-hidden="true">
-      <div class="line one"></div><div class="line two"></div><div class="line three"></div>
-      <span>À venir</span>
-    </div>
-  </section>
+    <section id="book" class="section book-sale reveal">
+      <div class="content-block narrow">
+        <p class="eyebrow" data-i18n="available">Livre disponible à l’achat</p>
+        <h2 data-i18n="bookTitle">L’Art de l’Instant</h2>
+        <p data-i18n="bookText">Chronique d’un pompier-photographe belge. Un livre sur l’action, l’humain, la lumière et ce qui reste après l’instant.</p>
+      </div>
+      <div class="buy-panel">
+        <div class="buy-left">
+          <p class="eyebrow" data-i18n="chooseVersion">Choisir la version</p>
+          <div class="version-tabs">
+            <button class="version-btn active" data-version="fr">Français</button>
+            <button class="version-btn" data-version="nl">Nederlands</button>
+            <button class="version-btn" data-version="en">English</button>
+          </div>
+          <p class="small" id="versionDescription">Version francophone : L’Art de l’Instant.</p>
+        </div>
+        <div class="buy-right">
+          <label for="countrySelect" data-i18n="chooseCountry">Pays Amazon</label>
+          <select id="countrySelect">
+            <option value="be">Belgique</option><option value="fr">France</option><option value="nl">Nederland</option><option value="us">United States</option><option value="uk">United Kingdom</option><option value="de">Deutschland</option><option value="es">España</option><option value="it">Italia</option><option value="pl">Polska</option><option value="se">Sverige</option><option value="ie">Ireland</option>
+          </select>
+          <a class="button primary" id="amazonLink" href="#" target="_blank" rel="noopener" data-i18n="buyAmazon">Acheter sur Amazon</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="projets" class="chapter projects" data-scene="cards">
-    <div class="copy wide">
-      <p class="kicker">Projets éditoriaux</p>
-      <h2>Construire un univers autour du métier</h2>
-      <p>Livres narratifs, carnets, supports de préparation : des projets pensés pour raconter, transmettre et rester utiles.</p>
-    </div>
-    <div class="cards">
-      <article><span>01</span><h3>Carnet de garde</h3><p>Noter les gardes, les apprentissages, les moments forts et les traces du terrain.</p></article>
-      <article><span>02</span><h3>Journal d'un futur pompier</h3><p>Accompagner ceux qui préparent le métier avec discipline, lucidité et motivation.</p></article>
-      <article><span>03</span><h3>Carnet de préparation</h3><p>Un outil structuré pour progresser vers les épreuves, sans se perdre dans le bruit.</p></article>
-    </div>
-  </section>
+    <section id="next" class="section next-book reveal">
+      <div class="next-visual" aria-hidden="true">
+        <div class="ember-field"></div>
+        <div class="manuscript-card">
+          <span data-i18n="comingSoon">À venir</span>
+          <h3>Entre Flammes & Silences</h3>
+        </div>
+      </div>
+      <div class="content-block">
+        <p class="eyebrow" data-i18n="nextEyebrow">Prochain livre à venir</p>
+        <h2>Entre Flammes & Silences</h2>
+        <p data-i18n="nextText">Un récit plus profond sur la vie pompier : ce qu’on voit, ce qu’on tait, ce qu’on transporte après l’intervention.</p>
+      </div>
+    </section>
 
-  <section id="auteur" class="chapter author" data-scene="author">
-    <div class="portrait-orb"></div>
-    <div class="copy split-copy">
-      <p class="kicker">Qui est l'auteur ?</p>
-      <h2>Gaétan Vermeire</h2>
-      <p>Pompier professionnel à Bruxelles, photographe de reportage et auteur. Lookfavor rassemble ses récits, ses images et ses projets de transmission.</p>
-      <a class="ghost" href="https://thelookfavor.github.io/lookfavor-academy/">Voir le site Lookfavor Académie</a>
-    </div>
-  </section>
-</main>
+    <section id="projects" class="section projects reveal">
+      <div class="content-block wide">
+        <p class="eyebrow" data-i18n="projectsEyebrow">À venir</p>
+        <h2 data-i18n="projectsTitle">Projets éditoriaux</h2>
+        <p data-i18n="projectsText">Des supports pensés autour de la transmission, de la préparation au métier et de la mémoire de garde.</p>
+      </div>
+      <div class="project-grid">
+        <article><span>01</span><h3 data-i18n="project1Title">Carnet de garde</h3><p data-i18n="project1Text">Un carnet pour garder trace des journées, interventions et apprentissages.</p></article>
+        <article><span>02</span><h3 data-i18n="project2Title">Journal d’un futur pompier</h3><p data-i18n="project2Text">Un support pour accompagner les candidats dans leur préparation.</p></article>
+        <article><span>03</span><h3 data-i18n="project3Title">Carnet de préparation</h3><p data-i18n="project3Text">Méthode, motivation et progression pour entrer dans le métier avec lucidité.</p></article>
+      </div>
+    </section>
 
-<footer>© Gaétan Vermeire - Lookfavor. Tous droits réservés.</footer>
-<script src="script.js"></script>
+    <section id="author" class="section author reveal">
+      <div class="author-portrait">
+        <img src="assets/author-lookfavor.jpg" alt="Portrait de Gaétan Vermeire">
+      </div>
+      <div class="content-block">
+        <p class="eyebrow" data-i18n="authorEyebrow">Qui est l’auteur ?</p>
+        <h2>Gaétan Vermeire</h2>
+        <p data-i18n="authorText">Pompier professionnel à Bruxelles, photographe de reportage et auteur. Lookfavor rassemble une même intention : raconter le réel avec sobriété, précision et humanité.</p>
+        <a class="button ghost" href="https://www.instagram.com/the_lookfavor" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© Gaétan Vermeire — Lookfavor.</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>
